@@ -9,4 +9,83 @@ body {
   background: #0d1323;
   color: #fbffff;
   font-family: 'Space Grotesk', 'Helvetica Neue';
+  display: flex;
+}
+
+.container {
+  align-items: center;
+  width: 80%;
+  margin: 0px auto;
+  border-radius: 2rem;
+  background: transparent;
+}
+
+.heading {
+  padding: 50px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heading input {
+  padding: 1rem;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+.searchlist {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+
+.searchitem {
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 20px;
+  background: #1e204b;
+  width: 500px;
+}
+
+.searchitem h1,
+.footeritem h1 {
+  padding-bottom: 10px;
+}
+.searchitem p,
+.footeritem p {
+  padding-bottom: 15px;
+}
+.searchitem button {
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.footerlist {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 50px 30px;
+  margin: 0px auto;
+}
+
+.footeritem {
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 20px;
+  background: #1e204b;
+  width: 500px;
+}
+
+.footeritem a {
+  text-decoration: none;
+}
+
+.titlesearch {
+  display: flex;
+  gap: 1rem;
 }
