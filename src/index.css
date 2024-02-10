@@ -45,6 +45,8 @@ body {
 }
 
 .searchitem {
+  display: flex;
+  flex-direction: column;
   border: 1px solid white;
   border-radius: 2rem;
   padding: 20px;
@@ -61,8 +63,14 @@ body {
   padding-bottom: 15px;
 }
 .searchitem button {
+  background: #ff5e7d;
+  color: #fbffff;
+  margin-top: auto;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 1rem;
+  width: 60%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .footerlist {
@@ -74,6 +82,8 @@ body {
 }
 
 .footeritem {
+  display: flex;
+  flex-direction: column;
   border: 1px solid white;
   border-radius: 2rem;
   padding: 20px;
@@ -82,10 +92,37 @@ body {
 }
 
 .footeritem a {
+  margin-top: auto;
   text-decoration: none;
+  color: #ff5e7d !important;
+}
+
+.footeritem a:hover {
+  color: #7235d1;
+  text-decoration: underline;
+}
+
+.searchitem button:hover {
+  background: #7235d1;
 }
 
 .titlesearch {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    font-size: 70%;
+  }
+  .searchlist,
+  .footerlist {
+    flex-direction: column;
+  }
+
+  .searchitem,
+  .footeritem {
+    width: 100%;
+  }
 }
